@@ -6,4 +6,7 @@ module ArtistsHelper
       link_to(song.artist_name, artist_path(song.artist))
     end
   end
+
+  def artist_select(song, artist)
+  end
 end
