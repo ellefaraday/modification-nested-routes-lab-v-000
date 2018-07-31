@@ -25,7 +25,7 @@ class SongsController < ApplicationController
   end
 
   def new
-    @song = Song.new
+    @song = Song.new(artist_id: params[:artist_id])
   end
 
   def create
@@ -67,4 +67,3 @@ class SongsController < ApplicationController
     params.require(:song).permit(:title, :artist_name)
   end
 end
-
